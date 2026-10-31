@@ -1,0 +1,240 @@
+/* ============================================================
+   CampusConnect - Premium Modern Campus Experience Design System
+   Matches stitch_campusconnect_event_platform_ui & DESIGN.md specs
+   ============================================================ */
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: #f9f9ff;
+    color: #141b2b;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    overflow-x: hidden;
+  }
+
+  /* Custom subtle modern scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f3ff;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #c8c4d8;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #787586;
+  }
+}
+
+/* ============================================================
+   Smooth Micro-interactions & Elevation
+   ============================================================ */
+
+.event-card {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s ease;
+  will-change: transform, box-shadow;
+}
+
+.event-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px -8px rgba(84, 66, 222, 0.12), 0 4px 12px -2px rgba(20, 27, 43, 0.06);
+}
+
+.event-card-img-wrap img {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.event-card:hover .event-card-img-wrap img {
+  transform: scale(1.05);
+}
+
+/* ============================================================
+   Navigation Pill Highlights
+   ============================================================ */
+
+.nav-active {
+  background-color: #e9edff !important;
+  color: #5442de !important;
+  font-weight: 700 !important;
+}
+
+/* ============================================================
+   Interactive Filter Chips
+   ============================================================ */
+
+.filter-chip {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  user-select: none;
+}
+
+.filter-chip.active {
+  background-color: #6d5ef8 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 12px -2px rgba(109, 94, 248, 0.35);
+  transform: translateY(-1px);
+}
+
+.filter-chip:not(.active):hover {
+  background-color: #e1e8fd;
+  color: #141b2b;
+}
+
+/* ============================================================
+   Pulse & Glow Keyframes
+   ============================================================ */
+
+@keyframes radar-pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
+}
+
+.radar-ping {
+  animation: radar-pulse 2s infinite cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+@keyframes ambient-float {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-10px) scale(1.02);
+  }
+}
+
+.ambient-glow-1 {
+  animation: ambient-float 8s ease-in-out infinite;
+}
+
+.ambient-glow-2 {
+  animation: ambient-float 10s ease-in-out infinite reverse;
+}
+
+/* ============================================================
+   Skeleton Shimmer Loading Placeholder
+   ============================================================ */
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.skeleton-shimmer {
+  background: linear-gradient(90deg, #e9edff 25%, #f9f9ff 50%, #e9edff 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* ============================================================
+   Modal Transitions
+   ============================================================ */
+
+@keyframes modalEnter {
+  from {
+    opacity: 0;
+    transform: scale(0.94) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.animate-modal-enter {
+  animation: modalEnter 0.22s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Perforated tear line on ticket */
+.ticket-tear-line {
+  border-top: 2px dashed #c8c4d8;
+  position: relative;
+}
+
+.ticket-tear-line::before,
+.ticket-tear-line::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  width: 20px;
+  height: 20px;
+  background-color: #f9f9ff;
+  border-radius: 50%;
+}
+
+.ticket-tear-line::before {
+  left: -26px;
+}
+
+.ticket-tear-line::after {
+  right: -26px;
+}
+
+/* ============================================================
+   Toast Notifications
+   ============================================================ */
+
+.toast-item {
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 18px;
+  background-color: #141b2b;
+  color: #ffffff;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 500;
+  box-shadow: 0 12px 24px -6px rgba(20, 27, 43, 0.25);
+  animation: toastSlideUp 0.28s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.toast-item.error {
+  background-color: #a63628;
+}
+
+.toast-item.success {
+  background-color: #006c49;
+}
+
+@keyframes toastSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Avatar overlaps */
+.avatar-stack > * {
+  margin-left: -8px;
+  border: 2px solid #ffffff;
+}
+
+.avatar-stack > *:first-child {
+  margin-left: 0;
+}

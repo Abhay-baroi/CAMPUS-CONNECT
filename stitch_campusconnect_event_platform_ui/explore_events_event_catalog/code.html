@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-secondary-fixed":"#002113","inverse-on-surface":"#edf0ff","primary-fixed":"#e4dfff","tertiary-fixed":"#ffdad4","on-tertiary-fixed":"#410000","tertiary":"#a63628","inverse-surface":"#293040","on-background":"#141b2b","on-secondary-fixed-variant":"#005236","on-primary-fixed-variant":"#3c22c7","surface-container":"#e9edff","background":"#f9f9ff","surface-container-lowest":"#ffffff","secondary-fixed":"#6ffbbe","surface-tint":"#5543df","error":"#ba1a1a","on-surface-variant":"#474555","surface":"#f9f9ff","inverse-primary":"#c5c0ff","surface-bright":"#f9f9ff","on-tertiary":"#ffffff","on-primary":"#ffffff","surface-variant":"#dce2f7","outline-variant":"#c8c4d8","tertiary-container":"#c74e3e","error-container":"#ffdad6","surface-container-low":"#f1f3ff","on-secondary":"#ffffff","tertiary-fixed-dim":"#ffb4a8","on-error":"#ffffff","secondary":"#006c49","surface-container-highest":"#dce2f7","on-surface":"#141b2b","surface-dim":"#d3daef","on-primary-fixed":"#140067","secondary-fixed-dim":"#4edea3","on-tertiary-fixed-variant":"#872015","primary-container":"#6d5ef8","on-tertiary-container":"#fffeff","surface-container-high":"#e1e8fd","secondary-container":"#6cf8bb","primary":"#5442de","outline":"#787586","on-secondary-container":"#00714d","primary-fixed-dim":"#c5c0ff","on-error-container":"#93000a","on-primary-container":"#ffffff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-sm":"1rem","margin-mobile":"1rem","gutter-mobile":"1rem","margin":"2rem","gutter":"1.5rem","space-lg":"2rem","space-xs":"0.5rem","space-md":"1.5rem","space-xl":"3rem"},"fontFamily":{"headline-sm":["Inter"],"title-md":["Inter"],"label-md":["Inter"],"headline-lg-mobile":["Inter"],"badge-xs":["Inter"],"headline-lg":["Inter"],"headline-md":["Inter"],"body-lg":["Inter"],"body-md":["Inter"],"body-sm":["Inter"],"display-lg-mobile":["Inter"],"label-sm":["Inter"],"display-lg":["Inter"]},"fontSize":{"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"title-md":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"label-md":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.015em","fontWeight":"700"}],"badge-xs":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"700"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"26px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"22px","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}],"display-lg-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"800"}],"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"display-lg":["48px",{"lineHeight":"56px","letterSpacing":"-0.025em","fontWeight":"800"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest border-b border-surface-variant"><div class="h-16 max-w-7xl mx-auto px-6 flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-xs"><img alt="CampusConnect Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Wja6O9no4VbV3zzJqJFQSHZsnjCXZ7sspxcFl5lgMXs1cvGOPQet5vyfHHklm-oKUVGWLO-XTITeniacAO1bqfq-BcU-Yxoy8NXwrfowWSjbBri_W8oef0cnjF279WN1Rubnnrg5iRCIsRz1LRiTn4mP_mkP5A4jz-iAhaKHdAvUbRuK-zXcBQtykqjouj24RbQr9XiXYtgxG-4F3JLy9Tfc0YA4m9jau_vjHWc1e5"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">CampusConnect</span></div><nav class="hidden md:flex items-center gap-space-xs" data-active-classes="bg-surface-container text-primary font-label-md rounded-lg"><a aria-current="page" class="px-space-sm py-space-xs transition-colors bg-surface-container text-primary font-label-md rounded-lg" data-path="explore-events" href="#">Explore Events</a><a class="px-space-sm py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="event-details" href="#">Event Details</a><a class="px-space-sm py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" data-path="my-registrations" href="#">My Registrations</a></nav><div class="flex items-center gap-space-xs"><div class="hidden sm:flex items-center bg-surface-container-low rounded-full px-space-sm py-1"><span class="font-body-sm text-body-sm text-on-surface-variant select-none">student1@campus.edu</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLUEPBgy4KGqvhvfU3pUuzXKBdxbRAXrNFKm0zLwifz60ixhR1Pvr5kyjB3up-3DORWtudrq--jJj_iQ3A5nBJoY9z_jij-socFVv9kQrZ6LRv64IL9V3IhfSJdShBHD2v5nZo88oLRXoDchGi3xYzdMVaxI9EWHlKyr6QMepfYJhuNsbRSX6K5zny8ygIPOAqpa_lqiC_AJ04OXyRbKwTd4KJ8PdeErR4AYMxLgk"/></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Subtle Ambient Glow -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-32 -left-32 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute top-24 right-0 w-80 h-80 bg-secondary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-6 py-space-xl relative">
+<!-- Catalog Header & Editorial Anchor -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
+<div class="max-w-2xl">
+<div class="inline-flex items-center gap-space-xs px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm mb-space-sm shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+            Spring Semester 2025
+          </div>
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight leading-tight">
+            Find your next <br class="hidden sm:inline"/>campus experience.
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-space-xs max-w-xl">
+            Discover hackathons, guest lectures, and tech workshops across campus departments.
+          </p>
+</div>
+<!-- Metric Spark Bar & Campus Velocity Visual -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center gap-space-md min-w-[280px]">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">electric_bolt</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center justify-between text-on-surface font-title-md text-title-md">
+<span>Campus Pulse</span>
+<span class="text-secondary font-label-md text-label-md font-bold">94% Active</span>
+</div>
+<div class="w-full bg-surface-variant h-2 rounded-full mt-2 overflow-hidden">
+<div class="bg-primary-container h-full rounded-full transition-all duration-1000" style="width: 86%"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1 block">42 Sessions Scheduled</span>
+</div>
+</div>
+</div>
+<!-- Search & Filter Controls -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm mb-space-xl flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
+<!-- Search Input -->
+<div class="relative flex-1 max-w-lg">
+<div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-outline">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</div>
+<input class="w-full h-11 pl-10 pr-4 bg-surface-container-low text-on-surface placeholder:text-outline text-body-md font-body-md rounded-lg focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all" id="event-search-input" placeholder="Search events, topics, or labs..." type="text"/>
+</div>
+<!-- Filter Chips Rail -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 lg:pb-0" id="filter-chip-group">
+<button class="filter-btn px-4 py-2 rounded-full font-label-md text-label-md transition-all shadow-sm bg-primary-container text-on-primary-container hover:opacity-95" data-filter="all">
+            All
+          </button>
+<button class="filter-btn px-4 py-2 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface" data-filter="ai">
+            AI
+          </button>
+<button class="filter-btn px-4 py-2 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface" data-filter="robotics">
+            Robotics
+          </button>
+<button class="filter-btn px-4 py-2 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface" data-filter="open source">
+            Open Source
+          </button>
+<button class="filter-btn px-4 py-2 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface" data-filter="design">
+            Design
+          </button>
+<button class="filter-btn px-4 py-2 rounded-full font-label-md text-label-md transition-all bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface" data-filter="web3">
+            Web3
+          </button>
+</div>
+</div>
+<!-- Event Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg" id="event-catalog-grid">
+<!-- CARD 1: Featured AI Build Night -->
+<div class="event-card group bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden" data-category="ai">
+<div class="relative w-full h-48 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Students collaborating at an artificial intelligence build night with laptops displaying glowing neural network diagrams and blue violet cyber interfaces in modern campus innovation laboratory" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANUTfpy-HpyT5pV4rFQe0fjkbtzaSlXxkA24o6R9fXHjx-RLcif1EwXpjFNjsFwuvB2AMrkK40xodlULZbj4M7paexrd1kGZU4fuepRmsBYytysp_5w4zxclowP4UGj61dWka33wC7OWvCn_tsvOZcjFbmx1rwTYC2fOGxaQ8YKSNGZaTqebtf1BN6icDBm6XYIyyuLi00VAsvX1vEv_d2qYqSbCD4mEQHg6yjXMg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/80 via-transparent to-transparent"></div>
+<div class="absolute top-3 left-3 flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-md bg-surface-container-lowest/90 backdrop-blur font-label-sm text-label-sm text-primary font-bold shadow-sm">AI</span>
+<span class="px-2.5 py-1 rounded-md bg-primary-container text-on-primary-container font-badge-xs text-badge-xs uppercase tracking-wider">Featured</span>
+</div>
+<div class="absolute bottom-3 left-3 text-surface-container-lowest flex items-center gap-1.5 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">school</span>
+<span>Computer Science Hub</span>
+</div>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-2 mb-2">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full font-badge-xs text-badge-xs bg-error-container text-on-error-container">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container animate-ping"></span>
+                  8 seats left
+                </span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Free RSVP</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                AI Build Night
+              </h2>
+<div class="mt-space-sm space-y-2 font-body-md text-body-md text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">calendar_today</span>
+<span>Apr 12, 2025 • 6:00 PM</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline">location_on</span>
+<span class="truncate">Main Seminar Hall</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md flex items-center justify-between">
+<div class="flex -space-x-2">
+<span class="inline-block h-7 w-7 rounded-full ring-2 ring-surface-container-lowest bg-surface-container-high text-center font-label-sm text-label-sm leading-7">JD</span>
+<span class="inline-block h-7 w-7 rounded-full ring-2 ring-surface-container-lowest bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm text-center leading-7">RK</span>
+<span class="inline-block h-7 w-7 rounded-full ring-2 ring-surface-container-lowest bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm text-center leading-7">+42</span>
+</div>
+<button class="px-4 py-2 rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md flex items-center gap-1 hover:opacity-90 transition-opacity">
+<span>View Details</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CARD 2: Autonomous Robotics Workshop -->
+<div class="event-card group bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden" data-category="robotics">
+<div class="relative w-full h-48 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="University robotics laboratory filled with autonomous robotic arms mechanical sensors circuit boards and university students inspecting hardware machinery" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgYlVO9-_9pT7nFbp042goVjZrPXxx_HwQToy6fC9oOYxccSvXa2KaxHMfcptTc48ZmO2rhis7BB0d_PYbFawFFFF5DcLFuIro41lG-jFaNvYWEA_-fFtttJuLMEtchmvpZnrtDoNuZKf6YBZSfTAv15AOraBKZDQnliTiyq3Q-aogJ9K-ItRNTIYO2mtEepFvHbsgDKYfLcOWhLExlBIr8xUUnabnfeqBbR9cQ4o"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/80 via-transparent to-transparent"></div>
+<div class="absolute top-3 left-3">
+<span class="px-2.5 py-1 rounded-md bg-surface-container-lowest/90 backdrop-blur font-label-sm text-label-sm text-secondary font-bold shadow-sm">Robotics</span>
+</div>
+<div class="absolute bottom-3 left-3 text-surface-container-lowest flex items-center gap-1.5 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">precision_manufacturing</span>
+<span>Robotics Guild</span>
+</div>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-2 mb-2">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full font-badge-xs text-badge-xs bg-surface-container text-on-surface-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  15 seats left
+                </span>
+<span class="font-label-sm text-label-sm text-outline">Open Seats</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                Autonomous Robotics Workshop
+              </h2>
+<div class="mt-space-sm space-y-2 font-body-md text-body-md text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">calendar_today</span>
+<span>Apr 18, 2025 • 2:30 PM</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline">location_on</span>
+<span class="truncate">Engineering Lab 4B</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md flex items-center justify-between">
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">handyman</span>
+<span>Kit Provided</span>
+</div>
+<button class="px-4 py-2 rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md flex items-center gap-1 hover:opacity-90 transition-opacity">
+<span>View Details</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CARD 3: Open Source Sprint & Git Jam -->
+<div class="event-card group bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden" data-category="open source">
+<div class="relative w-full h-48 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Open source programming hackathon team reviewing GitHub terminal code repositories on high resolution screens in illuminated glass campus hub" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKHPKtsGgbjQtUcT4aEPvux0nceJBJSUCdwuekJQvByeRQsdYj6xTo2_mkKsqBxeJvqCC1qxzQf2rrI1E_Dxo5JujqLj7TrSrYs9QIN7aSGoYb1XGzz0IjiTL4xTwvr_b20RjZuqrd3Fd5U9uSeJTcLq1SPAguiEBoPBqA7HbpPkzGB97HlmEUWsxGjhPcznfNvlpNa6kzg47ufeCqXkHa50f1fwC_UT2oc_GiY3M"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/80 via-transparent to-transparent"></div>
+<div class="absolute top-3 left-3">
+<span class="px-2.5 py-1 rounded-md bg-surface-container-lowest/90 backdrop-blur font-label-sm text-label-sm text-on-surface font-bold shadow-sm">Open Source</span>
+</div>
+<div class="absolute bottom-3 left-3 text-surface-container-lowest flex items-center gap-1.5 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">terminal</span>
+<span>Linux & OSS Club</span>
+</div>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-2 mb-2">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full font-badge-xs text-badge-xs bg-error-container text-on-error-container font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-ping"></span>
+                  3 seats left
+                </span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">Filling Fast</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                Open Source Sprint & Git Jam
+              </h2>
+<div class="mt-space-sm space-y-2 font-body-md text-body-md text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">calendar_today</span>
+<span>Apr 24, 2025 • 10:00 AM</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline">location_on</span>
+<span class="truncate">Student Innovation Center</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md flex items-center justify-between">
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">code</span>
+<span>All Levels</span>
+</div>
+<button class="px-4 py-2 rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md flex items-center gap-1 hover:opacity-90 transition-opacity">
+<span>View Details</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CARD 4: Full-Stack Next.js Hack Day -->
+<div class="event-card group bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden" data-category="open source">
+<div class="relative w-full h-48 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Modern web design and React developer workspace showing multi monitor code IDE clean minimalist desk setup with modern web typography layouts" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGG1yybGXR5F_CLgKGQ5kQtt4umasj5CDEnW5J0dUdsm_CmSP9S8PeBz9KlMeEaikiZGDPrMMX8M6BLeS6ucmDrO_dULjZs_CUNTWfihG-ZNPTjjYGep2nGjYCHlIPK3RIZSghLX8xieseuiHjsbEdMieV4vG_FgGhpi3zrHFN3LIwKpLZHZW7IzPEfWTwyphsYICJW7ssWBO7R2AvEBBHWexaRFlAFDwhlH7i5PA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/80 via-transparent to-transparent"></div>
+<div class="absolute top-3 left-3">
+<span class="px-2.5 py-1 rounded-md bg-surface-container-lowest/90 backdrop-blur font-label-sm text-label-sm text-on-surface font-bold shadow-sm">Open Source</span>
+</div>
+<div class="absolute bottom-3 left-3 text-surface-container-lowest flex items-center gap-1.5 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">developer_mode</span>
+<span>Web Dev Society</span>
+</div>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-2 mb-2">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full font-badge-xs text-badge-xs bg-surface-container text-on-surface-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  22 seats left
+                </span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Free RSVP</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                Full-Stack Next.js Hack Day
+              </h2>
+<div class="mt-space-sm space-y-2 font-body-md text-body-md text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">calendar_today</span>
+<span>May 02, 2025 • 9:00 AM</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline">location_on</span>
+<span class="truncate">Turing Hall B10</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md flex items-center justify-between">
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">local_cafe</span>
+<span>Lunch Provided</span>
+</div>
+<button class="px-4 py-2 rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md flex items-center gap-1 hover:opacity-90 transition-opacity">
+<span>View Details</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CARD 5: Generative AI & LLM Masterclass -->
+<div class="event-card group bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden" data-category="ai">
+<div class="relative w-full h-48 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90" data-alt="Keynote auditorium presentation on generative artificial intelligence and large language models with dynamic illuminated data projection and lecture hall audience" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAr70tynuJBXO0FcT9B5sfJNCBlglF5pQOSGYvQA_E6up4vMvK-hExCHmjgbApBkZ6mcy6sQPinaKGgm3LsiMdCYiF4KOUOLlCREO5aQz-1-LrRoHi455Sa417BSNEqc64zmexkuFsn7Unw3APfxPCTKyarp_EyfOoXaDAM-zVnNkmvm13esMcXNT7WexDD5hB9TzYsd_vAQt4DUCUFuqyIPZ6vkUNKzfS_4aWFNWE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/80 via-transparent to-transparent"></div>
+<div class="absolute top-3 left-3">
+<span class="px-2.5 py-1 rounded-md bg-surface-container-lowest/90 backdrop-blur font-label-sm text-label-sm text-primary font-bold shadow-sm">AI</span>
+</div>
+<div class="absolute bottom-3 left-3 text-surface-container-lowest flex items-center gap-1.5 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">psychology</span>
+<span>AI Research Collective</span>
+</div>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-2 mb-2">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full font-badge-xs text-badge-xs bg-surface-container-high text-on-surface-variant font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                  Event Full
+                </span>
+<span class="font-label-sm text-label-sm text-outline">Waitlist Open</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                Generative AI & LLM Masterclass
+              </h2>
+<div class="mt-space-sm space-y-2 font-body-md text-body-md text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">calendar_today</span>
+<span>May 07, 2025 • 4:00 PM</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline">location_on</span>
+<span class="truncate">Auditorium 2</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md flex items-center justify-between">
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-outline">hourglass_top</span>
+<span>48 on Waitlist</span>
+</div>
+<button class="px-4 py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md flex items-center gap-1 hover:bg-surface-variant transition-colors">
+<span>View Details</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CARD 6: RoboSub Autonomous Systems -->
+<div class="event-card group bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden" data-category="robotics">
+<div class="relative w-full h-48 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Autonomous underwater submarine drone prototype testing in test tank pool with engineering students monitoring telemetry diagnostics on tablets" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOstauFZJHb1oaJVp1v9Lg0wc9kkuwKtKPkXRaH6JiSU8UwzKTLi4A23CIERInYhzghz8bCDcLIm3jlym82Uf2MV24VzrvmIHXzR5LHHJeSfTLGObdLRh3GItvnl8VFIqkSWO-G9bTkk98pB1lDRHRsrdcm1chDLmTFHcsBhpNmUVTLBnQlZC-CI0RoFHrhxERCDxYK0DGbMV4Tc2SB4fwqZgVrBvicMQMEAL1h1E"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/80 via-transparent to-transparent"></div>
+<div class="absolute top-3 left-3">
+<span class="px-2.5 py-1 rounded-md bg-surface-container-lowest/90 backdrop-blur font-label-sm text-label-sm text-secondary font-bold shadow-sm">Robotics</span>
+</div>
+<div class="absolute bottom-3 left-3 text-surface-container-lowest flex items-center gap-1.5 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">water</span>
+<span>Marine Engineering Lab</span>
+</div>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-2 mb-2">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full font-badge-xs text-badge-xs bg-surface-container text-on-surface-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  12 seats left
+                </span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Free RSVP</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                RoboSub Autonomous Systems
+              </h2>
+<div class="mt-space-sm space-y-2 font-body-md text-body-md text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">calendar_today</span>
+<span>May 14, 2025 • 1:00 PM</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline">location_on</span>
+<span class="truncate">Robotics Bay West</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md flex items-center justify-between">
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">explore</span>
+<span>Field Trials</span>
+</div>
+<button class="px-4 py-2 rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md flex items-center gap-1 hover:opacity-90 transition-opacity">
+<span>View Details</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Campus Spotlight Bottom Bar -->
+<div class="mt-space-xl bg-surface-container-high rounded-xl p-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-md">
+<span class="material-symbols-outlined text-[24px]">campaign</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Organizing an event or project demo?</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Get verified room access, department equipment funding, and instant campus RSVP discovery.</p>
+</div>
+</div>
+<button class="whitespace-nowrap px-6 py-3 rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md shadow-sm hover:shadow transition-shadow">
+          Submit Proposal →
+        </button>
+</div>
+</div>
+</div>
+<!-- Interactive Filter & Search Handling -->
+<script>
+    (function() {
+      const searchInput = document.getElementById('event-search-input');
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const cards = document.querySelectorAll('.event-card');
+      let currentFilter = 'all';
+
+      function updateVisibility() {
+        const query = (searchInput.value || '').toLowerCase().trim();
+
+        cards.forEach(card => {
+          const category = (card.getAttribute('data-category') || '').toLowerCase();
+          const title = (card.querySelector('h2')?.textContent || '').toLowerCase();
+          const location = (card.innerText || '').toLowerCase();
+
+          const matchesCategory = (currentFilter === 'all') || (category === currentFilter);
+          const matchesQuery = !query || title.includes(query) || location.includes(query);
+
+          if (matchesCategory && matchesQuery) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+      }
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => {
+            b.classList.remove('bg-primary-container', 'text-on-primary-container');
+            b.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+          });
+
+          btn.classList.add('bg-primary-container', 'text-on-primary-container');
+          btn.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+
+          currentFilter = (btn.getAttribute('data-filter') || 'all').toLowerCase();
+          updateVisibility();
+        });
+      });
+
+      if (searchInput) {
+        searchInput.addEventListener('input', updateVisibility);
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest border-t border-surface-variant py-space-lg"><div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs"><span class="font-title-md text-title-md text-on-surface">CampusConnect</span><span class="font-body-sm text-body-sm text-on-surface-variant">© 2025 Campus Life Hub.</span></div><div class="flex items-center gap-space-md"><span class="font-body-sm text-body-sm text-on-surface-variant">All student activities verified</span><span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary"><span class="material-symbols-outlined text-[16px]">verified</span>Official Portal</span></div></div></footer></body></html>

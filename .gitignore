@@ -1,0 +1,46 @@
+# Environment files (CRITICAL: Do not commit API keys or secrets)
+.env
+.env.*
+backend/.env
+backend/.env.*
+!.env.example
+!backend/.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Logs
+*.log
+*.sqlite3
+
+# Node / Web
+node_modules/
+dist/
+
+# OS & IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
