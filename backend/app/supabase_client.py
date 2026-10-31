@@ -5,7 +5,11 @@ from supabase import create_client, Client
 
 logger = logging.getLogger("campusconnect.supabase")
 
-# Load environment variables from .env file
+# Load environment variables: check backend/.env first, then fallback to current directory
+backend_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+backend_env = os.path.join(backend_dir, ".env")
+if os.path.exists(backend_env):
+    load_dotenv(backend_env)
 load_dotenv()
 
 raw_url: str = os.getenv("SUPABASE_URL", "https://mtoxqsxnntfistbdoiyd.supabase.co").strip().strip('"').strip("'")
@@ -20,10 +24,8 @@ SUPABASE_URL: str = raw_url or "https://mtoxqsxnntfistbdoiyd.supabase.co"
 SUPABASE_KEY: str = raw_key
 
 if not SUPABASE_KEY:
-    print("\n" + "=" * 60)
-    print("⚠️  MISSING SUPABASE_KEY in backend/.env")
-    print("Please set SUPABASE_KEY to connect to your live database.")
-    print("=" * 60 + "\n")
+    logger.warning("[WARNING] MISSING SUPABASE_KEY in environment or .env file.")
+
 
 # Initialize the Supabase Client
 try:
