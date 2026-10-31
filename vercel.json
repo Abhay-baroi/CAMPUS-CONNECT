@@ -10,20 +10,24 @@
       "destination": "/api/index.py"
     },
     {
+      "source": "/docs",
+      "destination": "/api/index.py"
+    },
+    {
+      "source": "/openapi.json",
+      "destination": "/api/index.py"
+    },
+    {
       "source": "/app/(.*)",
-      "destination": "/frontend/$1"
+      "destination": "/$1"
+    },
+    {
+      "source": "/app",
+      "destination": "/index.html"
     },
     {
       "source": "/",
-      "destination": "/frontend/index.html"
-    },
-    {
-      "source": "/styles.css",
-      "destination": "/frontend/styles.css"
-    },
-    {
-      "source": "/app.js",
-      "destination": "/frontend/app.js"
+      "destination": "/index.html"
     }
   ]
 }

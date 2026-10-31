@@ -4,9 +4,19 @@
   // ============================================================
   // Configuration & Smart API Base Resolution
   // ============================================================
-  const isDirectFastAPI = window.location.pathname.startsWith("/app");
-  const API_BASE = window.CAMPUSCONNECT_API_BASE || 
-    (isDirectFastAPI ? window.location.origin : (window.location.origin && !window.location.origin.includes("file://") ? "http://127.0.0.1:8000" : "http://127.0.0.1:8000"));
+  // Smart API Base: In production (Vercel, custom domain), use origin or relative path.
+  // In local development, if on port 8000 use origin/relative; if on another port (e.g. 5500), use localhost:8000.
+  const isLocalhost = Boolean(
+    window.location.hostname === "localhost" ||
+    window.location.hostname === "127.0.0.1" ||
+    window.location.hostname === "[::1]"
+  );
+
+  const API_BASE = (window.CAMPUSCONNECT_API_BASE || 
+    (!isLocalhost 
+      ? (window.location.origin || "") 
+      : (window.location.port === "8000" ? (window.location.origin || "") : "http://127.0.0.1:8000"))
+  ).replace(/\/+$/, "");
 
   const TEST_STUDENT_ID = "22222222-2222-2222-2222-222222222222";
   const FALLBACK_COVER = "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80";

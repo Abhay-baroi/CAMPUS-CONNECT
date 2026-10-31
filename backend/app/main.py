@@ -33,14 +33,23 @@ def health_check():
 
 frontend_directory = Path(__file__).resolve().parents[2] / "frontend"
 
-# Mount frontend static app under /app
-app.mount(
-    "/app",
-    StaticFiles(directory=frontend_directory, html=True),
-    name="frontend",
-)
+# Mount frontend static app under /app if directory exists (for local standalone server)
+if frontend_directory.is_dir():
+    app.mount(
+        "/app",
+        StaticFiles(directory=frontend_directory, html=True),
+        name="frontend",
+    )
 
-# Seamlessly redirect root traffic to the frontend web app
-@app.get("/", include_in_schema=False)
-def root_redirect():
-    return RedirectResponse(url="/app/")
+    @app.get("/", include_in_schema=False)
+    def root_redirect():
+        return RedirectResponse(url="/app/")
+else:
+    @app.get("/", include_in_schema=False)
+    def root_info():
+        return {
+            "status": "online",
+            "service": "CampusConnect Serverless API",
+            "docs": "/docs"
+        }
+
